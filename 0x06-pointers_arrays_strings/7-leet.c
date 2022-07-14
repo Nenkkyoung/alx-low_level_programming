@@ -5,7 +5,7 @@
  * @x: param x
  * Return: a string
  */
-char *leey(char *x)
+char *leet(char *x)
 {
 	int a = 0, b, l = 5;
 	char tr[5] = {'A', 'E', '0', 'T', 'L'};
