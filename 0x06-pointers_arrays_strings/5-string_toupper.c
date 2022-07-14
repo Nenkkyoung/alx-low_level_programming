@@ -6,14 +6,15 @@
  * @Return: returns a character
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *x)
 {
 	int index = 0;
 
-	while (str[index++])
+	while (x[index])
 	{
-		if (str[index] >= 'a' && str[index] <= 'z')
-			str[index] -= 32;
+		if (x[index] >= 97 && x[index] <= 122)
+			x[index] = x[index] - 32;
+		i+
 	}
 
 	return (str);
