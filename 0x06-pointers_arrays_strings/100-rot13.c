@@ -1,9 +1,12 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * rot13 - function that reverses string using rot13
  * @s: string
- * Return: encoded string
+ * Return: Always 0.
  */
+int main(void)
 char *rot13(char *s)
 {
 	int x, y;
