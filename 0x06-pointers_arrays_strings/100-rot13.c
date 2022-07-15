@@ -1,29 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - function that reverses string using rot13
- * @s: string
- * Return: Always 0.
+ * rot13 - encodes a string in rot13
+ * @s: string to be encoded
+ *
+ * Return: the resulting string
  */
-int main(void)
 char *rot13(char *s)
 {
-	int x, y;
+	int i, j;
 
-	char input[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	chsr output[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for ( = 0; s[x] != '\0'; x++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (y = 0; input[y] != '\0'; y++)
+		for (j = 0; a[j] != '\0'; j++)
 		{
-			if (s[x] == input[y])
+			if (s[i] == a[j])
 			{
-				s[x] = output[y];
+				s[i] = b[j];
 				break;
 			}
 		}
 	}
+
 	return (s);
 }
