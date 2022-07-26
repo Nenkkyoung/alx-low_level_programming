@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 char *_strdup(char *str);
 
 char **strtow(char *str);
